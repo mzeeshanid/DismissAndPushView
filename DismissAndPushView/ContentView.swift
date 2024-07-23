@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showOptions: Bool = false
+    @State private var showBlockView: Bool = false
+    @State private var showReportView: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Button {
+                    showOptions.toggle()
+                } label: {
+                    Text("Show options")
+                }
+            }
+            .padding()
+            .sheet(isPresented: $showOptions) {
+                UserReportingView { option in
+                    switch option {
+                    case .block:
+                        showBlockView.toggle()
+                    case .report:
+                        showReportView.toggle()
+                    }
+                }
+                .presentationDetents([.height(100)])
+            }
+            .navigationDestination(isPresented: $showBlockView) {
+                Text("Block view")
+            }
+            .navigationDestination(isPresented: $showReportView) {
+                Text("Report view")
+            }
         }
-        .padding()
     }
 }
 

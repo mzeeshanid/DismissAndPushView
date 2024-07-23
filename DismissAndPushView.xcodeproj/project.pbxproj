@@ -11,6 +11,7 @@
 		16F701E72C50432400D48135 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F701E62C50432400D48135 /* ContentView.swift */; };
 		16F701E92C50432500D48135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F701E82C50432500D48135 /* Assets.xcassets */; };
 		16F701EC2C50432500D48135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F701EB2C50432500D48135 /* Preview Assets.xcassets */; };
+		16F701F32C50436A00D48135 /* UserReportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F701F22C50436A00D48135 /* UserReportingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		16F701E62C50432400D48135 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16F701E82C50432500D48135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F701EB2C50432500D48135 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16F701F22C50436A00D48135 /* UserReportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReportingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				16F701E42C50432400D48135 /* DismissAndPushViewApp.swift */,
 				16F701E62C50432400D48135 /* ContentView.swift */,
+				16F701F22C50436A00D48135 /* UserReportingView.swift */,
 				16F701E82C50432500D48135 /* Assets.xcassets */,
 				16F701EA2C50432500D48135 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F701F32C50436A00D48135 /* UserReportingView.swift in Sources */,
 				16F701E72C50432400D48135 /* ContentView.swift in Sources */,
 				16F701E52C50432400D48135 /* DismissAndPushViewApp.swift in Sources */,
 			);
